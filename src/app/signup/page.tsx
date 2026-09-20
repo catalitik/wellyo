@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { ArrowLeft, Leaf } from "lucide-react";
+import { SignupForm } from "@/components/auth/signup-form";
+export default function SignupPage() { return <main className="flex min-h-screen items-center justify-center bg-cream px-6 py-10"><div className="w-full max-w-md"><Link href="/login" className="mb-10 inline-flex items-center gap-2 text-sm font-semibold text-ink/60"><ArrowLeft size={16}/> Volver al acceso</Link><div className="rounded-[2rem] border border-white bg-white p-7 shadow-soft sm:p-10"><div className="mb-8 flex h-12 w-12 items-center justify-center rounded-2xl bg-sage-500 text-white"><Leaf size={24}/></div><p className="text-sm font-semibold uppercase tracking-[.16em] text-sage-500">Tu espacio empieza aquí</p><h1 className="mt-2 text-3xl font-bold">Crea tu cuenta</h1><p className="mt-3 mb-8 leading-7 text-ink/60">Wellyo es tu espacio privado para avanzar a tu manera.</p><SignupForm/></div></div></main>; }

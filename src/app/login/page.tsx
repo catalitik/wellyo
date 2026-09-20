@@ -1,0 +1,5 @@
+import Link from "next/link";
+import { ArrowLeft, Leaf } from "lucide-react";
+import { LoginForm } from "@/components/auth/login-form";
+
+export default function LoginPage() { return <main className="flex min-h-screen items-center justify-center bg-cream px-6 py-10"><div className="w-full max-w-md"><Link href="/" className="mb-10 inline-flex items-center gap-2 text-sm font-semibold text-ink/60 hover:text-ink"><ArrowLeft size={16} /> Volver a inicio</Link><div className="rounded-[2rem] border border-white bg-white p-7 shadow-soft sm:p-10"><div className="mb-8 flex h-12 w-12 items-center justify-center rounded-2xl bg-sage-500 text-white"><Leaf size={24} /></div><p className="text-sm font-semibold uppercase tracking-[.16em] text-sage-500">Bienvenido de nuevo</p><h1 className="mt-2 text-3xl font-bold tracking-tight text-ink">Entra en tu espacio</h1><p className="mt-3 leading-7 text-ink/60">Continúa cuidando tus hábitos a tu manera.</p><LoginForm /><p className="mt-8 text-center text-sm text-ink/60">¿Todavía no tienes cuenta? <Link href="/signup" className="font-bold text-sage-700">Crear una cuenta</Link></p></div></div></main>; }
