@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { createClient } from "@/lib/supabase/client";
 import { Apple, ArrowLeft, Check, ChevronRight, Info, Leaf, RefreshCw, Target } from "lucide-react";
 
 const recommendations = [
